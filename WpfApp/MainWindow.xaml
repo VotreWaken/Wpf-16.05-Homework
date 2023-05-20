@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Label FontSize="20" Margin="0,30,0,0">Names</Label>
+            <ListBox x:Name="ListBoxCollection" FontSize="20" Margin="5" MinHeight="28"></ListBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox x:Name="TextBoxInput" FontSize="20" Margin="5,72,5,5"></TextBox>
+            <Button FontSize="20" Margin="5" Click="AddName">Add Name</Button>
+            <Button FontSize="20" Margin="5" Click="ClearAll">Clear All</Button>
+        </StackPanel>
+    </Grid>
+</Window>
